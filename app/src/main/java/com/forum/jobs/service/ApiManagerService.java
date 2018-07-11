@@ -15,7 +15,7 @@ import retrofit2.http.POST;
 
 public interface ApiManagerService {
 
-    @POST("passport/distribute_sessionid.do")
+    @POST("/account/distribute.do")
     Flowable<BaseModel<SessionModel>> getSessionId();
 
     @POST("/account/login.do")

@@ -1,4 +1,4 @@
-package com.forum.jobs.moneyhobby;
+package com.forum.jobs.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

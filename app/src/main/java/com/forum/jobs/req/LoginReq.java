@@ -6,12 +6,12 @@ package com.forum.jobs.req;
 
 public class LoginReq {
     //用户账户（4位-16位数字或字母）
-    public String account;
+    public String username;
     //密码
     public String password;
 
-    public LoginReq(String account, String password) {
-        this.account = account;
+    public LoginReq(String username, String password) {
+        this.username = username;
         this.password = password;
     }
 }

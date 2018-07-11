@@ -39,10 +39,12 @@ android {
         mhobby {
             applicationId "com.forum.moneyhobby"
             buildConfigField("String", "BUGLY_APPID", "\"91ad84d26e\"")
+            buildConfigField("String", "NORMAL_URL", "\"http://192.168.3.198:8091\"")
         }
         xhobby {
             applicationId "com.forum.xhobby"
             buildConfigField("String", "BUGLY_APPID", "\"91ad84d26e\"")
+            buildConfigField("String", "NORMAL_URL", "\"http://192.168.3.198:8091\"")
         }
     }
 }

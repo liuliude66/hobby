@@ -6,10 +6,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.support.multidex.MultiDex;
-import android.util.Log;
 
+import com.forum.base.utils.ProductFlavorsHelper;
+import com.forum.base.utils.SPUtils;
 import com.forum.jobs.BuildConfig;
-import com.forum.jobs.moneyhobby.MainActivity;
+import com.forum.jobs.ui.MainActivity;
 import com.tencent.bugly.Bugly;
 import com.tencent.bugly.beta.Beta;
 import com.tencent.bugly.beta.interfaces.BetaPatchListener;
@@ -85,7 +86,9 @@ public class GlobalApplication extends DefaultApplicationLike {
         Beta.canShowUpgradeActs.add(MainActivity.class);
         // 这里实现SDK初始化，appId替换成你的在Bugly平台申请的appId
         Bugly.init(getApplication(), BuildConfig.BUGLY_APPID, false);
-//        SPUtils.init(getApplication());
+        SPUtils.init(getApplication());
+        ProductFlavorsHelper.get().setApplication(getApplication());
+        ProductFlavorsHelper.get().setBaseUrl(BuildConfig.NORMAL_URL, BuildConfig.NORMAL_URL);
     }
 
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)

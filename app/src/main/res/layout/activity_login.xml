@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.forum.jobs.moneyhobby.MainActivity">
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_close"
+        android:tint="@color/colorPrimary" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:text="账号登录"
+        android:textColor="@color/tvBlack"
+        android:textSize="@dimen/sp22" />
 
+
+    <LinearLayout
+        android:id="@+id/ll_username"
+        style="@style/LoginItemContainer"
+        android:layout_marginTop="125dp">
+
+        <TextView
+            style="@style/login_text_title"
+            android:text="用户账号" />
+
+        <EditText
+            android:id="@+id/et_username"
+            style="@style/LoginEtv"
+            android:hint="请输入用户账号"
+            android:maxLength="16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        style="@style/LoginItemContainer"
+        android:layout_below="@+id/ll_username"
+        android:layout_marginTop="@dimen/dp12">
+
+        <TextView
+            style="@style/login_text_title"
+            android:text="用户密码" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/LoginEtv"
+            android:hint="请输入用户密码"
+            android:maxLength="16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_below="@+id/ll_password"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/selector_btn_color_primary_corners_5dp"
+        android:text="登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp16" />
 </RelativeLayout>

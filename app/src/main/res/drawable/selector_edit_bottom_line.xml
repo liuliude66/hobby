@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <nine-patch xmlns:android="http://schemas.android.com/apk/res/android" android:dither="true" android:src="@drawable/edit_bottom_line_normal" android:tint="@color/colorPrimary">
+
+        </nine-patch>
+    </item>
+    <item android:drawable="@drawable/edit_bottom_line_normal" />
+</selector>

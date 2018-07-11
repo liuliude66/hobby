@@ -2,7 +2,7 @@ package com.forum.jobs.presenter;
 
 import com.forum.base.model.AccountModel;
 import com.forum.base.model.ILoginModelManager;
-import com.forum.base.model.LoginModelManager;
+import com.forum.jobs.model.LoginModelManager;
 import com.forum.base.presenter.ILoginPresenter;
 import com.forum.base.presenter.OnLoginFinishedListener;
 import com.forum.jobs.view.ILoginView;

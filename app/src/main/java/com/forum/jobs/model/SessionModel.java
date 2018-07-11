@@ -7,6 +7,6 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class SessionModel {
-    @SerializedName("sessionid")
+    public long expiryTime;
     public String sessionId;
 }

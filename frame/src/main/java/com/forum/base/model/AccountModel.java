@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by DELL on 2018/7/10.
  */
 
-public class AccountModel extends BaseModel {
+public class AccountModel {
 
     private String username;
     private String password;

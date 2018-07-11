@@ -42,10 +42,10 @@ public class ApiRepository {
     /**
      * 登录
      *
-     * @param account  用户账户（4位-16位数字或字母）
+     * @param username 用户账户（4位-16位数字或字母）
      * @param password 密码(6位-12位数字或字母)
      */
-    public Flowable<BaseModel<AccountModel>> login(String account, String password) {
-        return getApiService().login(new LoginReq(account, password));
+    public Flowable<BaseModel<AccountModel>> login(String username, String password) {
+        return getApiService().login(new LoginReq(username, password));
     }
 }
