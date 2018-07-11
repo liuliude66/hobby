@@ -7,3 +7,14 @@
 /build
 /captures
 .externalNativeBuild
+frame/src/androidTest/
+app/release/
+app/src/androidTest/
+app/src/test/
+baseview/src/androidTest/
+.idea/
+frame/.gitignore
+baseview/src/test/
+frame/src/test/
+gradle/wrapper/gradle-wrapper.jar
+app/.gitignore
