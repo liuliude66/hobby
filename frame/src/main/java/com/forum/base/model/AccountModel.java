@@ -8,20 +8,31 @@ import java.util.Date;
 
 public class AccountModel {
 
+    private long id;
     private String username;
     private String password;
 
     private String qqAccount;//QQ账号
     private String wxAccount;//微信账号
+
     private String aliAccount;//支付宝账号
     private Date registerTime;//注册时间
-    private Date lastLoginTime;//上次的登录时间
-    private Integer settleCount;//已经结算的次数
-    private Integer isSettled;//是否结算
-    private Integer sendTotalCount;//发送的总量
-    private Integer isEnabled;//是否被禁用
-    private String phoneImei;//注册的手机IMEI
-    private String telephone;//手机号码
+
+    /***private Date lastLoginTime;//上次的登录时间
+     private Integer settleCount;//已经结算的次数
+     private Integer isSettled;//是否结算
+     private Integer sendTotalCount;//发送的总量
+     private Integer isEnabled;//是否被禁用
+     private String phoneImei;//注册的手机IMEI
+     private String telephone;//手机号码
+     ***/
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -63,69 +74,70 @@ public class AccountModel {
         this.aliAccount = aliAccount;
     }
 
-    public Date getRegisterTime() {
-        return registerTime;
-    }
+    /****
+     public Date getRegisterTime() {
+     return registerTime;
+     }
 
-    public void setRegisterTime(Date registerTime) {
-        this.registerTime = registerTime;
-    }
+     public void setRegisterTime(Date registerTime) {
+     this.registerTime = registerTime;
+     }
 
-    public Date getLastLoginTime() {
-        return lastLoginTime;
-    }
+     public Date getLastLoginTime() {
+     return lastLoginTime;
+     }
 
-    public void setLastLoginTime(Date lastLoginTime) {
-        this.lastLoginTime = lastLoginTime;
-    }
+     public void setLastLoginTime(Date lastLoginTime) {
+     this.lastLoginTime = lastLoginTime;
+     }
 
-    public Integer getSettleCount() {
-        return settleCount;
-    }
+     public Integer getSettleCount() {
+     return settleCount;
+     }
 
-    public void setSettleCount(Integer settleCount) {
-        this.settleCount = settleCount;
-    }
+     public void setSettleCount(Integer settleCount) {
+     this.settleCount = settleCount;
+     }
 
-    public Integer getIsSettled() {
-        return isSettled;
-    }
+     public Integer getIsSettled() {
+     return isSettled;
+     }
 
-    public void setIsSettled(Integer isSettled) {
-        this.isSettled = isSettled;
-    }
+     public void setIsSettled(Integer isSettled) {
+     this.isSettled = isSettled;
+     }
 
-    public Integer getSendTotalCount() {
-        return sendTotalCount;
-    }
+     public Integer getSendTotalCount() {
+     return sendTotalCount;
+     }
 
-    public void setSendTotalCount(Integer sendTotalCount) {
-        this.sendTotalCount = sendTotalCount;
-    }
+     public void setSendTotalCount(Integer sendTotalCount) {
+     this.sendTotalCount = sendTotalCount;
+     }
 
-    public Integer getIsEnabled() {
-        return isEnabled;
-    }
+     public Integer getIsEnabled() {
+     return isEnabled;
+     }
 
-    public void setIsEnabled(Integer isEnabled) {
-        this.isEnabled = isEnabled;
-    }
+     public void setIsEnabled(Integer isEnabled) {
+     this.isEnabled = isEnabled;
+     }
 
-    public String getPhoneImei() {
-        return phoneImei;
-    }
+     public String getPhoneImei() {
+     return phoneImei;
+     }
 
-    public void setPhoneImei(String phoneImei) {
-        this.phoneImei = phoneImei;
-    }
+     public void setPhoneImei(String phoneImei) {
+     this.phoneImei = phoneImei;
+     }
 
-    public String getTelephone() {
-        return telephone;
-    }
+     public String getTelephone() {
+     return telephone;
+     }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
+     public void setTelephone(String telephone) {
+     this.telephone = telephone;
+     }***/
 
     @Override
     public String toString() {
