@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/bgGray"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout style="@style/BottomBarRl">
+
+        <TextView
+            android:id="@+id/tv_nav1"
+            style="@style/BottomBarTxt"
+            android:text="首页" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/BottomBarRl">
+
+        <TextView
+            android:id="@+id/tv_nav2"
+            style="@style/BottomBarTxt"
+            android:text="教程" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/BottomBarRl">
+
+        <TextView
+            android:id="@+id/tv_nav3"
+            style="@style/BottomBarTxt"
+            android:text="兼职" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/BottomBarRl">
+
+        <TextView
+            android:id="@+id/tv_nav4"
+            style="@style/BottomBarTxt"
+            android:text="活动" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/BottomBarRl">
+
+        <TextView
+            android:id="@+id/tv_nav5"
+            style="@style/BottomBarTxt"
+            android:text="我的" />
+    </RelativeLayout>
+</LinearLayout>

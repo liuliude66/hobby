@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4081</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFf0f1</color>
+    <color name="bgGray">#eeeeee</color>
+    <color name="tvGray">#5F5051</color>
+    <color name="tvBlack">#2F2021</color>
+    <color name="textHint">#C4C4C4</color>
+    <color name="dividerBlack">#dFdfdf</color>
+</resources>

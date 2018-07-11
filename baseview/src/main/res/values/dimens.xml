@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="sp18">18sp</dimen>
+    <dimen name="sp22">22sp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="item_height">40dp</dimen>
+</resources>
